@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#1f2937;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px;
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #eef2ff,
+        #f5f3ff
+    );
+}
+
+.hero-texto{
+    max-width:650px;
+}
+
+.badge-atlantic{
+    background:#e0e7ff;
+    color:#1b2f8f;
+    padding:10px 20px;
+    border-radius:30px;
+    display:inline-block;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#142b8c;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.hero p{
+    color:#64748b;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-botones{
+    display:flex;
+    gap:15px;
+}
+
+.btn-principal{
+    background:#142b8c;
+    color:white;
+    padding:15px 25px;
+    border-radius:12px;
+    text-decoration:none;
+}
+
+.btn-secundario{
+    border:2px solid #142b8c;
+    color:#142b8c;
+    padding:15px 25px;
+    border-radius:12px;
+    text-decoration:none;
+}
+
+/* FIGURA DECORATIVA */
+
+.hero-logo{
+    width:350px;
+    height:350px;
+    position:relative;
+}
+
+.figura{
+    position:absolute;
+    border-radius:40px;
+}
+
+.azul{
+    width:180px;
+    height:180px;
+    background:#142b8c;
+    top:0;
+    right:40px;
+}
+
+.turquesa{
+    width:150px;
+    height:150px;
+    background:#10c8c0;
+    bottom:40px;
+    right:0;
+}
+
+.morada{
+    width:150px;
+    height:150px;
+    background:#7f1998;
+    bottom:0;
+    left:30px;
+}
+
+/* ESTADÍSTICAS */
+
+.estadisticas{
+    max-width:1300px;
+    margin:auto;
+    padding:60px 30px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.estadistica{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.estadistica h3{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.estadistica h2{
+    font-size:42px;
+    color:#142b8c;
+}
+
+/* SECCIÓN COMENTARIOS */
+
+.comentarios{
+    max-width:1300px;
+    margin:auto;
+    padding:40px 30px 100px;
+}
+
+.encabezado-seccion{
+    margin-bottom:25px;
+}
+
+.encabezado-seccion h2{
+    font-size:40px;
+    color:#142b8c;
+}
+
+.encabezado-seccion p{
+    color:#64748b;
+}
+
+/* FILTROS */
+
+.herramientas{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+#buscar{
+    flex:1;
+    min-width:300px;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #dbe2ea;
+}
+
+button{
+    background:#142b8c;
+    color:white;
+    border:none;
+    padding:15px 20px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0e1b52;
+}
+
+/* TABLA */
+
+.tabla-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#142b8c;
+    color:white;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:left;
+}
+
+tbody tr{
+    border-bottom:1px solid #ececec;
+}
+
+tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* BADGES */
+
+.OK{
+    background:#d1fae5;
+    color:#065f46;
+    padding:8px 15px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.SPAM{
+    background:#f3e8ff;
+    color:#7f1998;
+    padding:8px 15px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.REVISAR{
+    background:#fde68a;
+    color:#92400e;
+    padding:8px 15px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:white;
+    margin-top:50px;
+}
+
+footer h3{
+    color:#142b8c;
+}
+
+footer p{
+    color:#64748b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 25px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .estadisticas{
+        grid-template-columns:1fr;
+    }
+
+    .hero-botones{
+        justify-content:center;
+    }
+}

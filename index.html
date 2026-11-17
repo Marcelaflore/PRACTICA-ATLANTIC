@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantic Quantum Innovations | Moderación</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-texto">
+
+            <span class="badge-atlantic">
+                Atlantic Quantum Innovations
+            </span>
+
+            <h1>
+                Sistema Inteligente de Moderación de Comentarios
+            </h1>
+
+            <p>
+                Plataforma desarrollada para clasificar, analizar y gestionar
+                comentarios mediante reglas automáticas de moderación,
+                facilitando la identificación de contenido válido,
+                spam y comentarios que requieren revisión.
+            </p>
+
+            <div class="hero-botones">
+                <a href="#estadisticas" class="btn-principal">
+                    Ver estadísticas
+                </a>
+
+                <a href="#comentarios" class="btn-secundario">
+                    Ver comentarios
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-logo">
+
+            <div class="figura azul"></div>
+            <div class="figura turquesa"></div>
+            <div class="figura morada"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADISTICAS -->
+
+    <section id="estadisticas" class="estadisticas">
+
+        <div class="estadistica">
+            <h3>Comentarios válidos</h3>
+            <h2 id="okCount">0</h2>
+        </div>
+
+        <div class="estadistica">
+            <h3>Detectados como Spam</h3>
+            <h2 id="spamCount">0</h2>
+        </div>
+
+        <div class="estadistica">
+            <h3>Pendientes de revisión</h3>
+            <h2 id="revisarCount">0</h2>
+        </div>
+
+        <div class="estadistica">
+            <h3>Total procesados</h3>
+            <h2 id="totalCount">0</h2>
+        </div>
+
+    </section>
+
+    <!-- COMENTARIOS -->
+
+    <section id="comentarios" class="comentarios">
+
+        <div class="encabezado-seccion">
+
+            <h2>Gestión de Comentarios</h2>
+
+            <p>
+                Consulta y analiza los comentarios almacenados en la base de datos.
+            </p>
+
+        </div>
+
+        <div class="herramientas">
+
+            <input
+                type="text"
+                id="buscar"
+                placeholder="Buscar comentario...">
+
+            <button onclick="filtrar('TODOS')">
+                Todos
+            </button>
+
+            <button onclick="filtrar('OK')">
+                OK
+            </button>
+
+            <button onclick="filtrar('SPAM')">
+                Spam
+            </button>
+
+            <button onclick="filtrar('REVISAR')">
+                Revisar
+            </button>
+
+        </div>
+
+        <div class="tabla-card">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Comentario</th>
+                        <th>Reportes</th>
+                        <th>Categoría</th>
+                        <th>Motivo</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaComentarios">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h3>Atlantic Quantum Innovations</h3>
+
+        <p>
+            Prueba técnica de desarrollo · Sistema Inteligente de Moderación de Comentarios
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
